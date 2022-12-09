@@ -15,32 +15,36 @@
     <title>Principal</title>
   </head>
   <body>
-    <header>
+    <header class="page-header">
       <div class="container">
         <nav>
           <a class="logo" href="#">WebStudio</a>
           <ul class="links">
-            <li><a class="link" href="#">Estudio</a></li>
-            <li><a class="link" href="portafolio.html">Portafolio</a></li>
-            <li><a class="link" href="#">Contactos</a></li>
+            <li><a class="links__item" href="#">Estudio</a></li>
+            <li>
+              <a class="links__item" href="portafolio.html">Portafolio</a>
+            </li>
+            <li><a class="links__item" href="#">Contactos</a></li>
           </ul>
         </nav>
         <ul class="contacts">
-          <li class="contact-item">
-            <svg class="icon-mail" width="16" height="12">
+          <li class="contacts__item">
+            <svg class="contacts__icon" width="16" height="12">
               <use xlink:href="./images/icons.svg#icon-sobre"></use>
             </svg>
-            <a class="contact" href="mailto:info@devstudio.com"
+            <a class="contacts__link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li class="contact-item">
-            <svg class="icon-phone" width="10" height="16">
+          <li class="contacts__item">
+            <svg class="contacts__icon" width="10" height="16">
               <use
                 xlink:href="./images/icons.svg#icon-telfono-inteligente"
               ></use>
             </svg>
-            <a class="contact" href="tel:+525555296000">+52 55 5529 6000</a>
+            <a class="contacts__link" href="tel:+525555296000"
+              >+52 55 5529 6000</a
+            >
           </li>
         </ul>
       </div>
@@ -57,113 +61,117 @@
       <div class="container">
         <ul class="descriptions">
           <li>
-            <svg class="icon-antenna" width="70" height="70">
+            <svg class="descriptions__icon" width="70" height="70">
               <use xlink:href="./images/icons.svg#icon-antena-1"></use>
             </svg>
-            <h3 class="subtitle">ATENCIÓN A LOS DETALLES</h3>
-            <p class="text">
+            <h3 class="descriptions__title">ATENCIÓN A LOS DETALLES</h3>
+            <p class="descriptions__text">
               Nos adentramos en todos los detalles y procesos de su negocio,
               para así desarrollar una solución a su medida.
             </p>
           </li>
           <li>
-            <svg class="icon-clock" width="70" height="70">
+            <svg class="descriptions__icon" width="70" height="70">
               <use xlink:href="./images/icons.svg#icon-reloj-1"></use>
             </svg>
-            <h3 class="subtitle">PUNTUALIDAD</h3>
-            <p class="text">
+            <h3 class="descriptions__title">PUNTUALIDAD</h3>
+            <p class="descriptions__text">
               Con nosotros, usted puede sentirse seguro y protegido. Un
               principio importante de la empresa: respetar su tiempo y respetar
               los plazos acordados.
             </p>
           </li>
           <li>
-            <svg class="icon-diagram" width="70" height="70">
+            <svg class="descriptions__icon" width="70" height="70">
               <use xlink:href="./images/icons.svg#icon-diagrama-1"></use>
             </svg>
-            <h3 class="subtitle">PLANIFICACIÓN</h3>
-            <p class="text">
+            <h3 class="descriptions__title">PLANIFICACIÓN</h3>
+            <p class="descriptions__text">
               Usted podrá observar y participar en cada fase del desarrollo y
               aplicación de soluciones.
             </p>
           </li>
           <li>
-            <svg class="icon-astronaut" width="70" height="70">
+            <svg class="descriptions__icon" width="70" height="70">
               <use xlink:href="./images/icons.svg#icon-astronauta-1"></use>
             </svg>
-            <h3 class="subtitle">TEGNOLOGÍA MODERNA</h3>
-            <p class="text">
+            <h3 class="descriptions__title">TEGNOLOGÍA MODERNA</h3>
+            <p class="descriptions__text">
               Usamos herramientas innovadoras para resolver las tareas
               asignadas. Es hora de simplificar los procesos laborales.
             </p>
           </li>
         </ul>
-        <div class="service">
-          <h2 class="title1">A qué nos dedicamos</h2>
-          <ul class="service-list">
-            <li class="service-item">
+        <section class="service">
+          <h2 class="service__title">A qué nos dedicamos</h2>
+          <ul class="list">
+            <li class="list__item">
               <img
+                class="list__img"
                 src="images/image.jpg"
                 alt="persona digitando código"
                 width="370"
               />
-              <h3>APLICACIONES DE ESCRITORIO</h3>
+              <h3 class="list__title">APLICACIONES DE ESCRITORIO</h3>
             </li>
-            <li class="service-item">
+            <li class="list__item">
               <img
+                class="list__img"
                 src="images/image-1.jpg"
                 alt="persona digitando código"
                 width="370"
               />
-              <h3>APLICACIONES MÓVILES</h3>
+              <h3 class="list__title">APLICACIONES MÓVILES</h3>
             </li>
-            <li class="service-item">
+            <li class="list__item">
               <img
+                class="list__img"
                 src="images/image-2.jpg"
                 alt="persona digitando código"
                 width="370"
               />
-              <h3>SOLUCIONES DE DISEÑO</h3>
+              <h3 class="list__title">SOLUCIONES DE DISEÑO</h3>
             </li>
           </ul>
-        </div>
+        </section>
       </div>
       <section class="team">
         <div class="container">
-          <h2 class="title1">Nuestro Equipo</h2>
-          <ul class="team-cards">
-            <li class="team-item">
+          <h2 class="team__title">Nuestro Equipo</h2>
+          <ul class="cards">
+            <li class="cards__item">
               <figure>
                 <img
+                  class="cards__img"
                   src="images/image-3.jpg"
                   alt="Andrés Cubo"
                   style="width: 270px"
                 />
-                <figcaption class="team-person">
-                  <h3 class="name">Andrés Cubo</h3>
+                <figcaption class="cards__person">
+                  <h3 class="cards__name">Andrés Cubo</h3>
                   <p>Diseñador de Productos</p>
-                  <ul class="team-icons">
+                  <ul class="icons">
                     <li>
-                      <svg class="icon-network" width="44" height="44">
+                      <svg class="icons__network" width="44" height="44">
                         <use
                           xlink:href="./images/icons.svg#icon-instagram"
                         ></use>
                       </svg>
                     </li>
                     <li>
-                      <svg class="icon-network" width="44" height="44">
+                      <svg class="icons__network" width="44" height="44">
                         <use xlink:href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </li>
                     <li>
-                      <svg class="icon-network" width="44" height="44">
+                      <svg class="icons__network" width="44" height="44">
                         <use
                           xlink:href="./images/icons.svg#icon-facebook"
                         ></use>
                       </svg>
                     </li>
                     <li>
-                      <svg class="icon-network" width="44" height="44">
+                      <svg class="icons__network" width="44" height="44">
                         <use
                           xlink:href="./images/icons.svg#icon-linkedin"
                         ></use>
@@ -173,38 +181,39 @@
                 </figcaption>
               </figure>
             </li>
-            <li class="team-item">
+            <li class="cards__item">
               <figure>
                 <img
+                  class="cards__img"
                   src="images/image-4.jpg"
                   alt="Carla Palacios"
                   style="width: 270px"
                 />
-                <figcaption class="team-person">
-                  <h3 class="name">Carla Palacios</h3>
+                <figcaption class="cards__person">
+                  <h3 class="cards__name">Carla Palacios</h3>
                   <p>Desarrolladora Frontend</p>
-                  <ul class="team-icons">
+                  <ul class="icons">
                     <li>
-                      <svg class="icon-network" width="44" height="44">
+                      <svg class="icons__network" width="44" height="44">
                         <use
                           xlink:href="./images/icons.svg#icon-instagram"
                         ></use>
                       </svg>
                     </li>
                     <li>
-                      <svg class="icon-network" width="44" height="44">
+                      <svg class="icons__network" width="44" height="44">
                         <use xlink:href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </li>
                     <li>
-                      <svg class="icon-network" width="44" height="44">
+                      <svg class="icons__network" width="44" height="44">
                         <use
                           xlink:href="./images/icons.svg#icon-facebook"
                         ></use>
                       </svg>
                     </li>
                     <li>
-                      <svg class="icon-network" width="44" height="44">
+                      <svg class="icons__network" width="44" height="44">
                         <use
                           xlink:href="./images/icons.svg#icon-linkedin"
                         ></use>
@@ -214,38 +223,39 @@
                 </figcaption>
               </figure>
             </li>
-            <li class="team-item">
+            <li class="cards__item">
               <figure>
                 <img
+                  class="cards__img"
                   src="images/image-5.jpg"
                   alt="Mario Dorado"
                   style="width: 270px"
                 />
-                <figcaption class="team-person">
-                  <h3 class="name">Mario Dorado</h3>
+                <figcaption class="cards__person">
+                  <h3 class="cards__name">Mario Dorado</h3>
                   <p>Marketing</p>
-                  <ul class="team-icons">
+                  <ul class="icons">
                     <li>
-                      <svg class="icon-network" width="44" height="44">
+                      <svg class="icons__network" width="44" height="44">
                         <use
                           xlink:href="./images/icons.svg#icon-instagram"
                         ></use>
                       </svg>
                     </li>
                     <li>
-                      <svg class="icon-network" width="44" height="44">
+                      <svg class="icons__network" width="44" height="44">
                         <use xlink:href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </li>
                     <li>
-                      <svg class="icon-network" width="44" height="44">
+                      <svg class="icons__network" width="44" height="44">
                         <use
                           xlink:href="./images/icons.svg#icon-facebook"
                         ></use>
                       </svg>
                     </li>
                     <li>
-                      <svg class="icon-network" width="44" height="44">
+                      <svg class="icons__network" width="44" height="44">
                         <use
                           xlink:href="./images/icons.svg#icon-linkedin"
                         ></use>
@@ -255,38 +265,39 @@
                 </figcaption>
               </figure>
             </li>
-            <li class="team-item">
+            <li class="cards__item">
               <figure>
                 <img
+                  class="cards__img"
                   src="images/image-6.jpg"
                   alt="Pablo Mijangos"
                   style="width: 270px"
                 />
-                <figcaption class="team-person">
-                  <h3 class="name">Pablo Mijangos</h3>
+                <figcaption class="cards__person">
+                  <h3 class="cards__name">Pablo Mijangos</h3>
                   <p>Diseñador IU</p>
-                  <ul class="team-icons">
+                  <ul class="icons">
                     <li>
-                      <svg class="icon-network" width="44" height="44">
+                      <svg class="icons__network" width="44" height="44">
                         <use
                           xlink:href="./images/icons.svg#icon-instagram"
                         ></use>
                       </svg>
                     </li>
                     <li>
-                      <svg class="icon-network" width="44" height="44">
+                      <svg class="icons__network" width="44" height="44">
                         <use xlink:href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </li>
                     <li>
-                      <svg class="icon-network" width="44" height="44">
+                      <svg class="icons__network" width="44" height="44">
                         <use
                           xlink:href="./images/icons.svg#icon-facebook"
                         ></use>
                       </svg>
                     </li>
                     <li>
-                      <svg class="icon-network" width="44" height="44">
+                      <svg class="icons__network" width="44" height="44">
                         <use
                           xlink:href="./images/icons.svg#icon-linkedin"
                         ></use>
@@ -301,35 +312,35 @@
       </section>
       <section class="clients">
         <div class="container">
-          <h2 class="title1">Clientes Regulares</h2>
-          <ul class="clients-logo">
+          <h2 class="clients__title">Clientes Regulares</h2>
+          <ul class="clients__logo">
             <li>
-              <svg class="client-item" width="106" height="52.83">
+              <svg class="clients__icon" width="106" height="52.83">
                 <use xlink:href="./images/icons.svg#icon-Logo"></use>
               </svg>
             </li>
             <li>
-              <svg class="client-item" width="106" height="52.83">
+              <svg class="clients__icon" width="106" height="52.83">
                 <use xlink:href="./images/icons.svg#icon-Logo1"></use>
               </svg>
             </li>
             <li>
-              <svg class="client-item" width="106" height="52.83">
+              <svg class="clients__icon" width="106" height="52.83">
                 <use xlink:href="./images/icons.svg#icon-Logo2"></use>
               </svg>
             </li>
             <li>
-              <svg class="client-item" width="106" height="52.83">
+              <svg class="clients__icon" width="106" height="52.83">
                 <use xlink:href="./images/icons.svg#icon-Logo3"></use>
               </svg>
             </li>
             <li>
-              <svg class="client-item" width="106" height="52.83">
+              <svg class="clients__icon" width="106" height="52.83">
                 <use xlink:href="./images/icons.svg#icon-Logo4"></use>
               </svg>
             </li>
             <li>
-              <svg class="client-item" width="106" height="52.83">
+              <svg class="clients__icon" width="106" height="52.83">
                 <use xlink:href="./images/icons.svg#icon-Logo5"></use>
               </svg>
             </li>
@@ -337,58 +348,62 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="page-footer">
       <div class="container">
-        <section class="location-data">
+        <section class="location">
           <a class="logo" href="#">WebStudio</a>
-          <address class="address-text">
+          <address class="location__address">
             Calz. Ticomán 500, Ciudad de México, CDMX, México
           </address>
-          <address class="contacts1">
-            <a class="contact" href="mailto:info@example.com"
+          <address class="location__contacts">
+            <a class="location__data" href="mailto:info@example.com"
               >info@example.com</a
             >
-            <a class="contact" href="tel:+525555296000">+52 55 5529 6000</a>
+            <a class="location__data" href="tel:+525555296000"
+              >+52 55 5529 6000</a
+            >
           </address>
         </section>
-        <section class="social-networks">
-          <h3>ENCUENTRENOS EN</h3>
-          <ul class="social-icons">
-            <li class="social-item">
-              <svg class="icon-network" width="44" height="44">
+        <section class="networks">
+          <h3 class="networks__text">ENCUENTRENOS EN</h3>
+          <ul class="networks__icons">
+            <li class="networks__item">
+              <svg class="networks__icon" width="44" height="44">
                 <use xlink:href="./images/icons.svg#icon-instagram"></use>
               </svg>
             </li>
-            <li class="social-item">
-              <svg class="icon-network" width="44" height="44">
+            <li class="networks__item">
+              <svg class="networks__icon" width="44" height="44">
                 <use xlink:href="./images/icons.svg#icon-twitter"></use>
               </svg>
             </li>
-            <li class="social-item">
-              <svg class="icon-network" width="44" height="44">
+            <li class="networks__item">
+              <svg class="networks__icon" width="44" height="44">
                 <use xlink:href="./images/icons.svg#icon-facebook"></use>
               </svg>
             </li>
-            <li class="social-item">
-              <svg class="icon-network" width="44" height="44">
+            <li class="networks__item">
+              <svg class="networks__icon" width="44" height="44">
                 <use xlink:href="./images/icons.svg#icon-linkedin"></use>
               </svg>
             </li>
           </ul>
         </section>
         <section class="subscribe">
-          <form class="subscribe-form" name="subscribe-form">
-            <label class="subscribe-mail">
-              <h3>SUSCRÍBASE al boletín informativo</h3>
+          <form class="form-footer" name="subscribe-form">
+            <label class="form-footer__mail">
+              <h3 class="form-footer__text">
+                SUSCRÍBASE al boletín informativo
+              </h3>
               <input
                 type="email"
                 name="email"
                 placeholder="Correo electrónico"
               />
             </label>
-            <button class="subscribe-btn" type="submit">
+            <button class="form-footer__btn" type="submit">
               Suscríbase
-              <svg class="send">
+              <svg class="form-footer__icon">
                 <use xlink:href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
