@@ -12,7 +12,7 @@ nav {
     color: $color-logo;
 
     &:active, &:visited {
-        color: $font-logo;
+        color: $color-logo;
     }
 }
 
@@ -24,6 +24,25 @@ nav {
         align-items: center;
         justify-content: space-between;
         height: 80px;
+    }
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    margin-left: 93px;
+
+    li:not(:last-child) {
+        margin-right: 50px;
+    }
+
+    &__item {
+        position: relative;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: var(--color-title);
     }
 }
 

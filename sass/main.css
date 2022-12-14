@@ -33,6 +33,12 @@ ul {
   margin: 0px;
 }
 
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 nav {
   display: flex;
 }
@@ -47,7 +53,7 @@ nav {
   color: #2196F3;
 }
 .logo:active, .logo:visited {
-  color: "Raleway", sans-serif;
+  color: #2196F3;
 }
 
 .page-header {
@@ -58,4 +64,21 @@ nav {
   align-items: center;
   justify-content: space-between;
   height: 80px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  margin-left: 93px;
+}
+.links li:not(:last-child) {
+  margin-right: 50px;
+}
+.links__item {
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--color-title);
 }/*# sourceMappingURL=main.css.map */

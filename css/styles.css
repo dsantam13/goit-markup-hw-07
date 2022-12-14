@@ -53,7 +53,8 @@ ul {
     align-items: baseline;
 }
 
-.page-footer h3 {
+.netwoeks__text,
+.form-footer__text {
     text-transform: uppercase;
 }
 
@@ -203,6 +204,15 @@ nav {
     cursor: pointer;
 }
 
+.clients__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--color-title);
+}
+
 .contacts__link {
     font-style: normal;
     font-weight: 500;
@@ -242,11 +252,17 @@ nav {
     align-items: flex-start;
 }
 
-.location__contacts>.contacts__link {
+.location__data {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--color-text);
     line-height: 1.71;
 }
 
-.location__contacts>.contacts__link:not(:last-child) {
+.location__contacts>.location__data:not(:last-child) {
     margin-bottom: 2px;
 }
 
@@ -353,9 +369,16 @@ nav {
     margin-top: 20px;
 }
 
-.networks__item>.networks__icons {
+.networks__icon {
     fill: var(--text-banner);
     background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.networks__icon:hover,
+.networks__icon:focus {
+    background-color: var(--color-logo);
 }
 
 .networks {
@@ -702,7 +725,7 @@ nav {
     row-gap: 30px;
 }
 
-.send {
+.form-footer__icon {
     width: 24px;
     height: 24px;
     fill: var(--text-banner);
@@ -715,6 +738,15 @@ nav {
 
 .service>.service__title {
     margin-bottom: 55.05px;
+}
+
+.service__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--color-title);
 }
 
 .list__item {
