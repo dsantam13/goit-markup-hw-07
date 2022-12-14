@@ -1,4 +1,38 @@
 @import url(https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap);
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #757575;
+  margin: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+a:active {
+  color: #2196F3;
+}
+a:visited {
+  color: #212121;
+}
+
+figure,
+h1,
+h2,
+h3,
+p,
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
 nav {
   display: flex;
 }
@@ -24,28 +58,4 @@ nav {
   align-items: center;
   justify-content: space-between;
   height: 80px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  color: #757575;
-  margin: 0px;
-}
-
-li {
-  list-style: none;
-}
-
-figure,
-h1,
-h2,
-h3,
-p,
-ul {
-  padding: 0px;
-  margin: 0px;
 }/*# sourceMappingURL=main.css.map */

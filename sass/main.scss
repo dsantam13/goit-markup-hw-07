@@ -1,5 +1,4 @@
 @import 'utils/variables';
-@import 'components/page-header';
 
 * {
     box-sizing: border-box;
@@ -15,6 +14,18 @@ li {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+
+    &:active {
+        color: $color-logo;
+    }
+
+    &:visited {
+        color: $color-title;
+    }
+}
+
 figure,
 h1,
 h2,
@@ -24,4 +35,7 @@ ul {
     padding: 0px;
     margin: 0px;
 }
+
+@import 'components/page-header';
+
 
