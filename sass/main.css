@@ -316,4 +316,38 @@ nav {
 .icons__network:hover, .icons__network:focus {
   background-color: #2196F3;
   fill: #FFFFFF;
+}
+
+.clients {
+  margin-top: 59px;
+  margin-bottom: 151px;
+}
+.clients__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.clients__logo {
+  margin-top: 44.02px;
+  display: flex;
+  justify-content: space-between;
+}
+.clients__logo li {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+.clients__icon {
+  box-sizing: content-box;
+  padding: 14.09px 32px;
+  outline: 1px solid #AFB1B8;
+  border-radius: 4px;
+  fill: #AFB1B8;
+}
+.clients__icon:hover, .clients__icon:focus {
+  outline: 1px solid #2196F3;
+  fill: #2196F3;
 }/*# sourceMappingURL=main.css.map */
