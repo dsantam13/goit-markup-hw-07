@@ -15,32 +15,36 @@
     <title>Portafolio</title>
   </head>
   <body>
-    <header>
+    <header class="page-header">
       <div class="container">
         <nav>
           <a class="logo" href="index.html">WebStudio</a>
           <ul class="links">
-            <li><a class="link" href="index.html">Estudio</a></li>
-            <li><a class="link" href="#">Portafolio</a></li>
-            <li><a class="link" href="#">Contactos</a></li>
+            <li><a class="links__item" href="index.html">Estudio</a></li>
+            <li>
+              <a class="links__item" href="#">Portafolio</a>
+            </li>
+            <li><a class="links__item" href="#">Contactos</a></li>
           </ul>
         </nav>
         <ul class="contacts">
-          <li class="contact-item">
-            <svg class="icon-mail" width="16" height="12">
+          <li class="contacts__item">
+            <svg class="contacts__icon" width="16" height="12">
               <use xlink:href="./images/icons.svg#icon-sobre"></use>
             </svg>
-            <a class="contact" href="mailto:info@devstudio.com"
+            <a class="contacts__link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li class="contact-item">
-            <svg class="icon-phone" width="10" height="16">
+          <li class="contacts__item">
+            <svg class="contacts__icon" width="10" height="16">
               <use
                 xlink:href="./images/icons.svg#icon-telfono-inteligente"
               ></use>
             </svg>
-            <a class="contact" href="tel:+525555296000">+52 55 5529 6000</a>
+            <a class="contacts__link" href="tel:+525555296000"
+              >+52 55 5529 6000</a
+            >
           </li>
         </ul>
       </div>
@@ -233,58 +237,62 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="page-footer">
       <div class="container">
-        <section class="location-data">
+        <section class="location">
           <a class="logo" href="#">WebStudio</a>
-          <address class="address-text">
+          <address class="location__address">
             Calz. Ticomán 500, Ciudad de México, CDMX, México
           </address>
-          <address class="contacts1">
-            <a class="contact" href="mailto:info@example.com"
+          <address class="location__contacts">
+            <a class="location__data" href="mailto:info@example.com"
               >info@example.com</a
             >
-            <a class="contact" href="tel:+525555296000">+52 55 5529 6000</a>
+            <a class="location__data" href="tel:+525555296000"
+              >+52 55 5529 6000</a
+            >
           </address>
         </section>
-        <section class="social-networks">
-          <h3>ENCUENTRENOS EN</h3>
-          <ul class="social-icons">
-            <li class="social-item">
-              <svg class="icon-network" width="44" height="44">
+        <section class="networks">
+          <h3 class="networks__text">ENCUENTRENOS EN</h3>
+          <ul class="networks__icons">
+            <li class="networks__item">
+              <svg class="networks__icon" width="44" height="44">
                 <use xlink:href="./images/icons.svg#icon-instagram"></use>
               </svg>
             </li>
-            <li class="social-item">
-              <svg class="icon-network" width="44" height="44">
+            <li class="networks__item">
+              <svg class="networks__icon" width="44" height="44">
                 <use xlink:href="./images/icons.svg#icon-twitter"></use>
               </svg>
             </li>
-            <li class="social-item">
-              <svg class="icon-network" width="44" height="44">
+            <li class="networks__item">
+              <svg class="networks__icon" width="44" height="44">
                 <use xlink:href="./images/icons.svg#icon-facebook"></use>
               </svg>
             </li>
-            <li class="social-item">
-              <svg class="icon-network" width="44" height="44">
+            <li class="networks__item">
+              <svg class="networks__icon" width="44" height="44">
                 <use xlink:href="./images/icons.svg#icon-linkedin"></use>
               </svg>
             </li>
           </ul>
         </section>
         <section class="subscribe">
-          <form class="subscribe-form" name="subscribe-form">
-            <label class="subscribe-mail">
-              <h3>SUSCRÍBASE al boletín informativo</h3>
+          <form class="form-footer" name="subscribe-form">
+            <label class="form-footer__mail">
+              <h3 class="form-footer__text">
+                SUSCRÍBASE al boletín informativo
+              </h3>
               <input
                 type="email"
                 name="email"
                 placeholder="Correo electrónico"
               />
             </label>
-            <button class="subscribe-btn" type="submit">
+            <button class="form-footer__btn" type="submit">
               Suscríbase
-              <svg class="send">
+              <svg class="form-footer__icon">
                 <use xlink:href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
