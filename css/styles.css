@@ -284,7 +284,7 @@ nav {
     width: 270px;
 }
 
-.exit-modal {
+.modal__exit {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -300,8 +300,8 @@ nav {
     cursor: pointer;
 }
 
-.exit-modal:hover,
-.exit-modal:focus {
+.modal__exit:hover,
+.modal__exit:focus {
     fill: var(--color-logo);
     outline: none;
 }
@@ -412,32 +412,32 @@ nav {
     fill: var(--text-banner);
 }
 
-.info-agree {
+.modal__agree {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     margin-top: 20px;
 }
 
-.info-check {
+.modal__check {
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
 }
 
-.info-check:checked+.box {
+.modal__check:checked+.modal__icon-box {
     fill: var(--color-logo);
     background-color: var(--color-logo);
     border-radius: 2px;
 }
 
-.box {
+.modal__icon-box {
     margin-top: 5px;
     width: 16px;
     height: 15px;
 }
 
-.check {
+.modal__icon-check {
     position: relative;
     width: 11px;
     height: 8px;
@@ -446,7 +446,7 @@ nav {
     fill: var(--text-banner);
 }
 
-.info-agree>p {
+.modal__text {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -457,7 +457,7 @@ nav {
     width: 400.62px;
 }
 
-.info-comments {
+.modal__comments {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -467,7 +467,7 @@ nav {
     color: var(--color-text);
 }
 
-.comments {
+.modal__textarea {
     margin-top: 4px;
     width: 100%;
     height: 120px;
@@ -479,7 +479,7 @@ nav {
     resize: none;
 }
 
-.comments::placeholder {
+.modal__textarea::placeholder {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -489,11 +489,11 @@ nav {
     color: rgba(117, 117, 117, 0.5);
 }
 
-.comments:focus {
+.modal__textarea:focus {
     outline: none;
 }
 
-.info-user {
+.modal__user {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -507,7 +507,7 @@ nav {
     margin-bottom: 10px;
 }
 
-.info-input {
+.modal__info {
     margin-top: 4px;
     width: 100%;
     height: 40px;
@@ -518,18 +518,18 @@ nav {
     padding-left: 42px;
 }
 
-.icon-input {
+.modal__icon {
     position: absolute;
     top: 32px;
     left: 15px;
 }
 
-.info-input:focus {
+.modal__info:focus {
     border-color: var(--color-logo);
     outline: none;
 }
 
-.info-input:focus+.icon-input {
+.modal__info:focus+.modal__icon {
     fill: var(--color-logo);
 }
 
@@ -605,7 +605,7 @@ nav {
     padding: 40px;
 }
 
-.modal>h3 {
+.modal__title {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -618,7 +618,7 @@ nav {
 }
 
 
-.modal-form>button {
+.modal__button {
     display: flex;
     justify-content: center;
     font-family: 'Roboto', sans-serif;
@@ -640,7 +640,7 @@ nav {
     cursor: pointer;
 }
 
-.modal-form>button:hover {
+.modal__button:hover {
     background-color: #188CE8;
 }
 
