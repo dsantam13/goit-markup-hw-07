@@ -5,7 +5,7 @@
     <meta name="description" content="homework 1: Web Studio Project" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./css/modern-normalize.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="sass/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -53,182 +53,208 @@
       <section class="products">
         <div class="container">
           <ul class="filters">
-            <li><button class="filter" type="button">Todo</button></li>
-            <li><button class="filter" type="button">Sitios-web</button></li>
-            <li><button class="filter" type="button">Aplicaciones</button></li>
-            <li><button class="filter" type="button">Diseño</button></li>
-            <li><button class="filter" type="button">Marketing</button></li>
+            <li class="filters__list">
+              <button class="filters__item" type="button">Todo</button>
+            </li>
+            <li class="filters__list">
+              <button class="filters__item" type="button">Sitios-web</button>
+            </li>
+            <li class="filters__list">
+              <button class="filters__item" type="button">Aplicaciones</button>
+            </li>
+            <li class="filters__list">
+              <button class="filters__item" type="button">Diseño</button>
+            </li>
+            <li class="filters__list">
+              <button class="filters__item" type="button">Marketing</button>
+            </li>
           </ul>
-          <ul class="products-all">
-            <li class="product-item">
+          <ul class="brochure">
+            <li class="brochure__item">
               <figure>
-                <div class="product-description">
-                  <img src="images/img-port.jpg" alt="Tecnoduck" />
-                  <div class="product-transition">
-                    <p>
-                      Tecnoduck es una plataforma de distribución de coronavirus
-                      de última generación. Las compañías usan esta plataforma
-                      para el espionaje digital y los ataques a los servidores
-                      seguros de la competencia.
-                    </p>
-                  </div>
+                <div class="brochure__description">
+                  <img
+                    class="brochure__img"
+                    src="images/img-port.jpg"
+                    alt="Tecnoduck"
+                  />
+                  <p class="brochure__transition">
+                    Tecnoduck es una plataforma de distribución de coronavirus
+                    de última generación. Las compañías usan esta plataforma
+                    para el espionaje digital y los ataques a los servidores
+                    seguros de la competencia.
+                  </p>
                 </div>
-                <figcaption class="category">
-                  <h3 class="product">Tecnoduck</h3>
+                <figcaption class="brochure__category">
+                  <h3 class="brochure__name">Tecnoduck</h3>
                   Sitio-web
                 </figcaption>
               </figure>
             </li>
-            <li class="product-item">
+            <li class="brochure__item">
               <figure>
-                <div class="product-description">
-                  <img src="images/img-port1.jpg" alt="Poster basketball" />
-                  <div class="product-transition">
-                    <p>
-                      Tecnoduck es una plataforma de distribución de coronavirus
-                      de última generación. Las compañías usan esta plataforma
-                      para el espionaje digital y los ataques a los servidores
-                      seguros de la competencia.
-                    </p>
-                  </div>
+                <div class="brochure__description">
+                  <img
+                    class="brochure__img"
+                    src="images/img-port1.jpg"
+                    alt="Poster basketball"
+                  />
+                  <p class="brochure__transition">
+                    Tecnoduck es una plataforma de distribución de coronavirus
+                    de última generación. Las compañías usan esta plataforma
+                    para el espionaje digital y los ataques a los servidores
+                    seguros de la competencia.
+                  </p>
                 </div>
-                <figcaption class="category">
-                  <h3 class="product">
+                <figcaption class="brochure__category">
+                  <h3 class="brochure__name">
                     Póster de Nueva Orleans vs Estrella Dorada
                   </h3>
                   Diseño
                 </figcaption>
               </figure>
             </li>
-            <li class="product-item">
+            <li class="brochure__item">
               <figure>
-                <div class="product-description">
-                  <img src="images/img-port2.jpg" alt="Restaurant Seafood" />
-                  <div class="product-transition">
-                    <p>
-                      Tecnoduck es una plataforma de distribución de coronavirus
-                      de última generación. Las compañías usan esta plataforma
-                      para el espionaje digital y los ataques a los servidores
-                      seguros de la competencia.
-                    </p>
-                  </div>
+                <div class="brochure__description">
+                  <img
+                    class="brochure__img"
+                    src="images/img-port2.jpg"
+                    alt="Restaurant Seafood"
+                  />
+                  <p class="brochure__transition">
+                    Tecnoduck es una plataforma de distribución de coronavirus
+                    de última generación. Las compañías usan esta plataforma
+                    para el espionaje digital y los ataques a los servidores
+                    seguros de la competencia.
+                  </p>
                 </div>
-                <figcaption class="category">
-                  <h3 class="product">Restaurante Seafood</h3>
+                <figcaption class="brochure__category">
+                  <h3 class="brochure__name">Restaurante Seafood</h3>
                   Aplicaciones
                 </figcaption>
               </figure>
             </li>
-            <li class="product-item">
+            <li class="brochure__item">
               <figure>
-                <div class="product-description">
-                  <img src="images/img-port3.jpg" alt="Project Prime" />
-                  <div class="product-transition">
-                    <p>
-                      Tecnoduck es una plataforma de distribución de coronavirus
-                      de última generación. Las compañías usan esta plataforma
-                      para el espionaje digital y los ataques a los servidores
-                      seguros de la competencia.
-                    </p>
-                  </div>
+                <div class="brochure__description">
+                  <img
+                    class="brochure__img"
+                    src="images/img-port3.jpg"
+                    alt="Project Prime"
+                  />
+                  <p class="brochure__transition">
+                    Tecnoduck es una plataforma de distribución de coronavirus
+                    de última generación. Las compañías usan esta plataforma
+                    para el espionaje digital y los ataques a los servidores
+                    seguros de la competencia.
+                  </p>
                 </div>
-                <figcaption class="category">
-                  <h3 class="product">Proyecto Prime</h3>
+                <figcaption class="brochure__category">
+                  <h3 class="brochure__name">Proyecto Prime</h3>
                   Marketing
                 </figcaption>
               </figure>
             </li>
-            <li class="product-item">
+            <li class="brochure__item">
               <figure>
-                <div class="product-description">
-                  <img src="images/img-port4.jpg" alt="Project Boxes" />
-                  <div class="product-transition">
-                    <p>
-                      Tecnoduck es una plataforma de distribución de coronavirus
-                      de última generación. Las compañías usan esta plataforma
-                      para el espionaje digital y los ataques a los servidores
-                      seguros de la competencia.
-                    </p>
-                  </div>
+                <div class="brochure__description">
+                  <img
+                    class="brochure__img"
+                    src="images/img-port4.jpg"
+                    alt="Project Boxes"
+                  />
+                  <p class="brochure__transition">
+                    Tecnoduck es una plataforma de distribución de coronavirus
+                    de última generación. Las compañías usan esta plataforma
+                    para el espionaje digital y los ataques a los servidores
+                    seguros de la competencia.
+                  </p>
                 </div>
-                <figcaption class="category">
-                  <h3 class="product">Proyecto Cajas</h3>
+                <figcaption class="brochure__category">
+                  <h3 class="brochure__name">Proyecto Cajas</h3>
                   Aplicaciones
                 </figcaption>
               </figure>
             </li>
-            <li class="product-item">
+            <li class="brochure__item">
               <figure>
-                <div class="product-description">
-                  <img src="images/img-port5.jpg" alt="monitor" />
-                  <div class="product-transition">
-                    <p>
-                      Tecnoduck es una plataforma de distribución de coronavirus
-                      de última generación. Las compañías usan esta plataforma
-                      para el espionaje digital y los ataques a los servidores
-                      seguros de la competencia.
-                    </p>
-                  </div>
+                <div class="brochure__description">
+                  <img
+                    class="brochure__img"
+                    src="images/img-port5.jpg"
+                    alt="monitor"
+                  />
+                  <p class="brochure__transition">
+                    Tecnoduck es una plataforma de distribución de coronavirus
+                    de última generación. Las compañías usan esta plataforma
+                    para el espionaje digital y los ataques a los servidores
+                    seguros de la competencia.
+                  </p>
                 </div>
-                <figcaption class="category">
-                  <h3 class="product">La inspiración no tiene límites</h3>
+                <figcaption class="brochure__category">
+                  <h3 class="brochure__name">
+                    La inspiración no tiene límites
+                  </h3>
                   Sitio-web
                 </figcaption>
               </figure>
             </li>
-            <li class="product-item">
+            <li class="brochure__item">
               <figure>
-                <div class="product-description">
-                  <img src="images/img-port6.jpg" alt="magazine" />
-                  <div class="product-transition">
-                    <p>
-                      Tecnoduck es una plataforma de distribución de coronavirus
-                      de última generación. Las compañías usan esta plataforma
-                      para el espionaje digital y los ataques a los servidores
-                      seguros de la competencia.
-                    </p>
-                  </div>
+                <div class="brochure__description">
+                  <img
+                    class="brochure__img"
+                    src="images/img-port6.jpg"
+                    alt="magazine"
+                  />
+                  <p class="brochure__transition">
+                    Tecnoduck es una plataforma de distribución de coronavirus
+                    de última generación. Las compañías usan esta plataforma
+                    para el espionaje digital y los ataques a los servidores
+                    seguros de la competencia.
+                  </p>
                 </div>
-                <figcaption class="category">
-                  <h3 class="product">Edición Limitada</h3>
+                <figcaption class="brochure__category">
+                  <h3 class="brochure__name">Edición Limitada</h3>
                   Diseño
                 </figcaption>
               </figure>
             </li>
-            <li class="product-item">
+            <li class="brochure__item">
               <figure>
-                <div class="product-description">
-                  <img src="images/img-port7.jpg" alt="tag" />
-                  <div class="product-transition">
-                    <p>
-                      Tecnoduck es una plataforma de distribución de coronavirus
-                      de última generación. Las compañías usan esta plataforma
-                      para el espionaje digital y los ataques a los servidores
-                      seguros de la competencia.
-                    </p>
-                  </div>
+                <div class="brochure__description">
+                  <img
+                    class="brochure__img"
+                    src="images/img-port7.jpg"
+                    alt="tag"
+                  />
+                  <p class="brochure__transition">
+                    Tecnoduck es una plataforma de distribución de coronavirus
+                    de última generación. Las compañías usan esta plataforma
+                    para el espionaje digital y los ataques a los servidores
+                    seguros de la competencia.
+                  </p>
                 </div>
-                <figcaption class="category">
-                  <h3 class="product">Proyecto LAB</h3>
+                <figcaption class="brochure__category">
+                  <h3 class="brochure__name">Proyecto LAB</h3>
                   Marketing
                 </figcaption>
               </figure>
             </li>
-            <li class="product-item">
+            <li class="brochure__item">
               <figure>
-                <div class="product-description">
+                <div class="brochure__description">
                   <img src="images/img-port8.jpg" alt="laptop working" />
-                  <div class="product-transition">
-                    <p>
-                      Tecnoduck es una plataforma de distribución de coronavirus
-                      de última generación. Las compañías usan esta plataforma
-                      para el espionaje digital y los ataques a los servidores
-                      seguros de la competencia.
-                    </p>
-                  </div>
+                  <p class="brochure__transition">
+                    Tecnoduck es una plataforma de distribución de coronavirus
+                    de última generación. Las compañías usan esta plataforma
+                    para el espionaje digital y los ataques a los servidores
+                    seguros de la competencia.
+                  </p>
                 </div>
-                <figcaption class="category">
-                  <h3 class="product">Negocio en Crecimiento</h3>
+                <figcaption class="brochure__category">
+                  <h3 class="brochure__name">Negocio en Crecimiento</h3>
                   Aplicaciones
                 </figcaption>
               </figure>
